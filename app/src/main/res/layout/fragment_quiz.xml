@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainBack"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/standardMargin">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/what_country_does_this_flag_belong_to"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standardSize" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimenHundred"
+            android:layout_marginTop="@dimen/standardMargin"
+            android:contentDescription="@string/flag_image"
+            android:src="@drawable/uz" />
+
+        <LinearLayout
+            android:id="@+id/llProgressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standardMargin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/standardMargin"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/standardSize"
+                tools:text="0/10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOptionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standardMargin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/standardMargin"
+            android:textColor="@color/colorCardBack"
+            android:textSize="@dimen/standardSize"
+            tools:text="Apple" />
+
+        <TextView
+            android:id="@+id/tvOptionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standardMargin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/standardMargin"
+            android:textColor="@color/colorCardBack"
+            android:textSize="@dimen/standardSize"
+            tools:text="Google" />
+
+
+        <TextView
+            android:id="@+id/tvOptionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standardMargin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/standardMargin"
+            android:textColor="@color/colorCardBack"
+            android:textSize="@dimen/standardSize"
+            tools:text="Android Inc." />
+
+        <TextView
+            android:id="@+id/tvOptionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standardMargin"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="@dimen/standardMargin"
+            android:textColor="@color/colorCardBack"
+            android:textSize="@dimen/standardSize"
+            tools:text="Nokia" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standardMargin"
+            android:background="@drawable/start_button_back"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standardSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
